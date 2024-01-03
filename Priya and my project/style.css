@@ -1,0 +1,47 @@
+body{
+    height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden
+}
+
+/*section1 starts*/
+
+#sec1{
+    width:  100vw;
+    height: 900px;
+    
+}
+
+#sec1::before{
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: url(img/front-page-header.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.custom-css-nav-had{
+  --bs-bg-opacity: 0;
+}
+.custom-ul-nav{
+  position: absolute;
+    left: 45em;
+    display: flex;
+    justify-content: space-between;
+    width:50%;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+.custom-touch-navFonts{
+  color: #fff;
+  font-size: 16px;
+    line-height: 26px;
+}
+
+
+/*responsive design*/
