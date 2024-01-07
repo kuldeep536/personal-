@@ -45,3 +45,66 @@ body{
 
 
 /*responsive design*/
+
+@media (min-width:350px) and (max-width:767px) {
+  html,body{
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .custom-ul-nav{
+    justify-content: space-between;
+    width: 23%;
+    /* margin-right: 334px; */
+    position: absolute;
+    left: 268px;
+    display: none;
+    margin-top: 22px;
+    animation-name: mov;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in;
+    
+  }
+  @keyframes mov {
+    from{
+      left: 300px;
+    }
+    to{
+      left: 268px;
+    }
+  }
+  
+  .custom-collapse-btn{
+    margin-left: 124px;
+  }
+}
+
+/* tab responsive mode */
+
+@media (min-width:768px) and (max-width:1366px) {
+  html,body{
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .custom-ul-nav{
+    left: 41em;
+    width: 6%;
+    display: none;
+    margin-top: 22px;
+    animation-name: mov;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes mov {
+    from{
+      left: 48em;
+    }
+    to{
+      left: 41em;
+    }
+  }
+  .custom-collapse-btn{
+    margin-left: 504px;
+  }
+  
+
+}
